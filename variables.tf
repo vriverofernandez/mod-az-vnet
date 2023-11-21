@@ -12,3 +12,8 @@ variable "resource_group_name" {
   type = string
   description = "resource group name"
 }
+
+variable "subnet_name" {
+  type = list(string)
+  description = "subnets name"
+}
