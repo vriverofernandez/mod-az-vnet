@@ -13,7 +13,7 @@ resource "azurerm_virtual_network" "vnet" {
     name = var.subnet_name[1]
     address_prefix = "10.0.2.0/24"
   }
-  
+    
 
   tags = { env = "dev" }
   
