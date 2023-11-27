@@ -22,3 +22,17 @@ variable "security_group" {
   type = string
   description = "security group name"
 }
+
+variable "address_space" {
+  type = list(string)
+  description = "address space vnet"
+}
+
+variable "subnet_address_prefix" {
+  type = list(string)
+  description = "address space prefix subnet"
+}
+
+variable "tags" {
+  
+}
