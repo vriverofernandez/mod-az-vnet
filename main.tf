@@ -7,6 +7,7 @@ resource "azurerm_virtual_network" "vnet" {
   subnet {
     name = var.subnet_name[0]
     address_prefix = "10.0.1.0/24"
+    security_group = var.security_group
   }
 
   subnet {

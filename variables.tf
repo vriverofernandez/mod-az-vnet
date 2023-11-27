@@ -17,3 +17,8 @@ variable "subnet_name" {
   type = list(string)
   description = "subnets name"
 }
+
+variable "security_group" {
+  type = string
+  description = "security group name"
+}
