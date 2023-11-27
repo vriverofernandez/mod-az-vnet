@@ -16,7 +16,7 @@ info
 | <a name="input_security_group"></a> [security\_group](#input\_security\_group) | security group name | `string` | n/a | yes |
 | <a name="input_subnet_address_prefix"></a> [subnet\_address\_prefix](#input\_subnet\_address\_prefix) | address space prefix subnet | `list(string)` | n/a | yes |
 | <a name="input_subnet_name"></a> [subnet\_name](#input\_subnet\_name) | subnets name | `list(string)` | n/a | yes |
-| <a name="input_tags"></a> [tags](#input\_tags) | n/a | `any` | n/a | yes |
+| <a name="input_tags"></a> [tags](#input\_tags) | mapa de tags | `map(string)` | n/a | yes |
 
 ## Outputs
 

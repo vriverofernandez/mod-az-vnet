@@ -34,5 +34,6 @@ variable "subnet_address_prefix" {
 }
 
 variable "tags" {
-  
+  type = map(string)
+  description = "mapa de tags"
 }
