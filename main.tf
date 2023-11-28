@@ -1,3 +1,7 @@
+locals {
+  len_ipname = length(var.ip_name)
+}
+
 resource "azurerm_virtual_network" "vnet" {
   name = var.name
   location = var.location
@@ -16,4 +20,13 @@ resource "azurerm_virtual_network" "vnet" {
 
   tags = var.tags
   
+}
+
+resource "azurerm_public_ip" "publicIp" {
+  count = local.len_ipname > 0 ? 1 : 0 
+  name =                var.ip_name
+  location =            var.location
+  resource_group_name = var.resource_group_name
+
+  allocation_method = "Dynamic"
 }

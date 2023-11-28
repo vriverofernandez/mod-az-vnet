@@ -41,3 +41,9 @@ variable "tags" {
 variable "subnets" {
   
 }
+
+variable "ip_name" {
+  type = string
+  description = "name public ip"
+  
+}
